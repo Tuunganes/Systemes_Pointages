@@ -1,0 +1,41 @@
+# Environment files
+.env
+.env.dev
+
+# Database files
+.db
+*.sqlite3
+
+# Secrets or config files
+config.json
+secrets.py
+
+# Python cache files
+_pycache_/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environments
+.venv/
+venv/
+myenv/
+env/
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Log files
+*.log
+logs/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+tmp/
+temp/
