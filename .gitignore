@@ -1,32 +1,163 @@
 # Environment files
 .env
 .env.dev
+.envrc
 
 # Database files
 .db
 *.sqlite3
+db.sqlite3
+db.sqlite3-journal
 
 # Secrets or config files
 config.json
 secrets.py
+local_settings.py
 
 # Python cache files
-_pycache_/
+__pycache__/
+*.py[cod]
 *.pyc
 *.pyo
 *.pyd
+*$py.class
+*.so
 
 # Virtual environments
 .venv/
 venv/
 myenv/
 env/
+ENV/
+env.bak/
+venv.bak/
+.venv
+.pixi
+__pypackages__/
 
 # IDE files
 .vscode/
 .idea/
 *.swp
 *.swo
+.spyderproject
+.spyproject
+.ropeproject
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py.cover
+.hypothesis/
+.pytest_cache/
+cover/
+
+# Translations
+*.mo
+*.pot
+
+# Flask stuff:
+instance/
+.webassets-cache
+
+# Scrapy stuff:
+.scrapy
+
+# Sphinx documentation
+docs/_build/
+
+# PyBuilder
+.pybuilder/
+target/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IPython
+profile_default/
+ipython_config.py
+
+# Poetry
+#poetry.lock
+#poetry.toml
+
+# pdm
+#pdm.lock
+#pdm.toml
+.pdm-python
+.pdm-build/
+
+# Celery stuff
+celerybeat-schedule
+celerybeat.pid
+
+# SageMath parsed files
+*.sage.py
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# mkdocs documentation
+/site
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# pytype static type analyzer
+.pytype/
+
+# Cython debug symbols
+cython_debug/
+
+# PyCharm
+#.idea/
+
+# Abstra
+.abstra/
+
+# Visual Studio Code
+#.vscode/
 
 # Log files
 *.log
@@ -39,3 +170,18 @@ Thumbs.db
 # Temporary files
 tmp/
 temp/
+
+# Ruff stuff:
+.ruff_cache/
+
+# PyPI configuration file
+.pypirc
+
+# Cursor
+.cursorignore
+.cursorindexingignore
+
+# Marimo
+marimo/_static/
+marimo/_lsp/
+__marimo__/
