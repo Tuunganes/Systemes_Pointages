@@ -1,0 +1,42 @@
+Système de Gestion de Pointage Next Steps for you Students
+==============================================================
+Build the database structure and modular apps in Django
+
+1. Creer le Django apps
+-------------------------
+In the backend folder, run: dans les dossier backend faite
+    python manage.py startapp employes
+    python manage.py startapp presences
+    python manage.py startapp historique   # optional
+
+2. Definissez les database tables (models) par app
+----------------------------------------------
+employes:
+    - Employe: nom, prénom, matricule, poste, structure, site, téléphone, email, date_engagement.
+
+presences:
+    - Presence: employe (FK), date_presence, heure_entree, heure_sortie, statut (présent, absent, retard).
+
+historique (optional):
+    - Historique: admin (FK to User), action, date_action.
+
+3. Plannifier les relations 
+---------------------
+    - un Employé -> +sieurs Presences.
+    - One Admin -> many Historique entries.
+    - Presence tjr lier a un Employé.
+
+Draw an ERD (Entity Relationship Diagram) before coding(dessiner d'abords les relations de donnees) avant de coder
+
+4. Run migrations incrementally
+-------------------------------
+    python manage.py makemigrations employes presences historique
+    python manage.py migrate
+
+5. la suites
+-------------
+    - Register models in admin.py.
+    - Create a superuser and log into Django admin.
+    - Add sample Employes and Presences in Django admin.
+    - Verify that relationships work correctly (one employee can have multiple presences).
+
