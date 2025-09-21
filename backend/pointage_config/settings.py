@@ -49,7 +49,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'Pointage.urls'
+ROOT_URLCONF = 'pointage_config.urls'
 
 TEMPLATES = [
     {
@@ -67,7 +67,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'Pointage.wsgi.application'
+WSGI_APPLICATION = 'pointage_config.wsgi.application'
 
 
 # Database
